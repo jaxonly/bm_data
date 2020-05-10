@@ -178,10 +178,10 @@ async function onReady() {
                 href: 'https://www.brandymelvilleonline.com.cn/accessories/bags-backpacks',
             }
         ]);
-
+        let s = Math.random() * 30;
         setTimeout(() => {
             mointGood();
-        }, 10 * 1000);
+        }, s * 1000);
     }
 
     mointGood();
