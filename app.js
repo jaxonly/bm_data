@@ -179,9 +179,11 @@ async function onReady() {
             }
         ]);
         let s = Math.random() * 30;
+        let timeout = Math.ceil(s * 1000);
+        console.log(`${timeout}ms后再次刷新...`);
         setTimeout(() => {
             mointGood();
-        }, s * 1000);
+        }, timeout);
     }
 
     mointGood();
