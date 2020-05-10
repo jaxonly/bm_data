@@ -1,0 +1,10 @@
+{
+  "name": "bm_data",
+  "version": "1.0.0",
+  "main": "app.js",
+  "license": "MIT",
+  "dependencies": {
+    "ioredis": "^4.16.3",
+    "puppeteer-chromium-resolver": "^3.2.0"
+  }
+}
