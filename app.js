@@ -172,12 +172,16 @@ async function onReady() {
         // 监控所有
         // await fetchByUrls(await getAllCategoryUrls());
         // // 监控包包
-        await fetchByUrls([
-            {
-                name: '手提包&双肩包',
-                href: 'https://www.brandymelvilleonline.com.cn/accessories/bags-backpacks',
-            }
-        ]);
+        try {
+            await fetchByUrls([
+                {
+                    name: '手提包&双肩包',
+                    href: 'https://www.brandymelvilleonline.com.cn/accessories/bags-backpacks',
+                }
+            ]);
+        } catch (e) {
+            console.error(e)
+        }
         let s = Math.random() * 30;
         let timeout = Math.ceil(s * 1000);
         console.log(`${timeout}ms后再次刷新...`);
